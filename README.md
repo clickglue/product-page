@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/clickglue/recipe-page/)
-- Live Site URL: [Page on Github](https://clickglue.github.io/recipe-page/)
+- Solution URL: [Code on Github](https://github.com/clickglue/product-page/)
+- Live Site URL: [Page on Github](https://clickglue.github.io/product-page/)
 
 ## My process
 
