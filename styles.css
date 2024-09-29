@@ -80,6 +80,7 @@ body {
 
 .product-page__text-title {
   font-family: "Fraunces";
+  font-weight: 700;
   font-size: xx-large;
   line-height: 2.2rem;
   margin: 1rem 0rem;
@@ -96,7 +97,7 @@ body {
 }
 .product-page__text-price-official {
   font-family: "Fraunces";
-  font-weight: 900;
+  font-weight: 700;
   font-size: 2.5em;
   line-height: 2.2em;
   margin: 0rem 1rem 0rem 0rem;
