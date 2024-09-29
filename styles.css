@@ -1,0 +1,156 @@
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+  /*colors*/
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-very-dark-blue: hsl(212, 21%, 14%);
+  --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 14px;
+  background-color: var(--primary-cream);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.product-page {
+  display: flex;
+  flex-direction: column; /*mobile first*/
+  background-color: var(--neutral-white);
+  border-radius: 1em;
+  margin: 1rem;
+  max-width: 24rem;
+}
+
+.product-page__image {
+}
+
+.product-page__image-image-mobile {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.product-page__image-image-desktop {
+  display: none;
+}
+
+.product-page__text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 1.7rem;
+}
+.product-page__text-type {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--neutral-dark-grayish-blue);
+  margin: 1rem 0rem;
+}
+
+.product-page__text-title {
+  font-family: "Fraunces";
+  font-size: xx-large;
+  line-height: 2.2rem;
+  margin: 1rem 0rem;
+}
+.product-page__text-description {
+  font-size: 1.1rem;
+  color: var(--neutral-dark-grayish-blue);
+}
+.product-page__text-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.product-page__text-price-official {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 2.2em;
+  margin: 0rem 1rem 0rem 0rem;
+  color: var(--primary-dark-cyan);
+}
+.product-page__text-price-strikethrough {
+  font-size: small;
+  text-decoration: line-through;
+}
+.product-page__text-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--primary-dark-cyan);
+  padding: 1em;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--neutral-white);
+  font-weight: 700;
+}
+
+.product-page__text-button:hover {
+  background-color: var(--neutral-very-dark-blue);
+}
+
+.product-page__text-button-icon {
+  margin: 0 1rem 0 0;
+}
+
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+  .product-page {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 48rem;
+  }
+  .product-page__image-image-desktop {
+    display: flex;
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+  .product-page__image-image-mobile {
+    display: none;
+  }
+  .product-page__text {
+    padding: 3rem 3rem 0rem 3rem;
+  }
+  .product-page__text-title {
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+  }
+  .product-page__text-price {
+    margin: 2rem 0rem 0rem 0rem;
+  }
+}
